@@ -33,6 +33,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		   <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+    </dependency>
 	</dependencies>
 
 	<build>
@@ -42,6 +46,11 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+		<resources>
+<resource>
+<directory>src/main/resources/xml</directory>
+</resource>
+</resources>
+			</build>
 
 </project>
